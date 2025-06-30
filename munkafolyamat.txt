@@ -33,8 +33,18 @@ Munkafolyamat
 
 1.3.) környezet tesztelése:
 
-    egyszerű index.php létrehozása, futtatása
+    egyszerű index.php létrehozása VS Code-ban, debug és futtatás
+    webszerver elindítása, tesztelés böngészőben (http://localhost:8000)
 
-2.)     
+2.) Design
+
+    egyetlen .php file vs. külön állományban a form és a logika?
+    terv: 2 külön állomány a világosabb szerkezet és inkrementális fejlesztés érdekében:
+    - index.php: html form-ot tartalmazza, az app belépési pontja.
+    - calculate.php: logika.
+
+3.) index.php implementálása
+
+
 
 
