@@ -22,13 +22,6 @@
         <br>
         
         <label>
-            2. szám:
-            <input type="text" name="szam2" required>
-        </label>
-        <br>
-        <br>
-        
-        <label>
             Művelet:
             <select name="muvelet" required>
                 <option value="">Válassz!</option>
@@ -37,6 +30,13 @@
                 <option value="*">*</option>
                 <option value="/">:</option>
             </select>
+        </label>
+        <br>
+        <br>
+        
+        <label>
+            2. szám:
+            <input type="text" name="szam2" required>
         </label>
         <br>
         <br>
