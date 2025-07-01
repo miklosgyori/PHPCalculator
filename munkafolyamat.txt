@@ -61,7 +61,7 @@ Munkafolyamat
     javított, tesztelhető:
     https://github.com/miklosgyori/PHPCalculator/commit/4fa7f225c79a54f459d730e4128cf6259f01ccca
 
-    tesztelés böngészőben, tesztesetek (***: ellenőrzés, hibakezelés implementácoót igényelnek):
+    tesztelés böngészőben, tesztesetek (***: ellenőrzés, hibakezelés implementációt igényelnek):
         1 + 2;  1.1 + 2.1;  0 + 1;  1 + 0;  -1.1 + 2.1; 1.1 + -2.1; 1 + 999999999;  999999999 + 1;  a + b***;
         1 - 2;  1.1 - 2.1;  0 - 1;  1 - 0;  -1.1 - 2.1; 1.1 - -2.1; 1 - 999999999;  999999999 - 1;  a - b***;
         1 * 2;  1.1 * 2.1;  0 * 1;  1 * 0;  -1.1 * 2.1; 1.1 * -2.1; 999999999 * 999999999;  a * b ***;
@@ -70,10 +70,13 @@ Munkafolyamat
 
 4.2.) inputellenőrzési és hibakezelési logika implementálása
 
+    https://github.com/miklosgyori/PHPCalculator/commit/49150749f594022a0e3c720e69a42d241b966cff
     tesztesetek (mindegyik sikeresen kezelve):
         a + b;  a - b; a * b;  1 / 0; a / b;
 
-    
+4.3.) eredmény és hibák megjelenítésének javítása
 
-    
+    tesztesetek (mindegyik sikeresen megjelenítve):
+        a + 1;  1 + a;  a + a;  1 / 0;  a / 0; a / a; 1 + 1;
+   
 

@@ -25,13 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if(empty($hiba)){
         $o1 = floatval($szam1);
-        echo $o1; /* TODO: tesztelésre, végén törölni */
-        echo "<br>";
-        echo $muvelet;
-        echo "<br>";
         $o2 = floatval($szam2);
-        echo $o2; /* TODO: tesztelésre, végén törölni */
-        echo "<br>";
         switch($muvelet){
             case '+':
                 $eredmeny = $o1 + $o2;
@@ -46,13 +40,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $eredmeny = $o1 / $o2;
                 break;
         }
-        echo $eredmeny; /* TODO: tesztelésre, végén törölni */
-    }
-    else {   /* TODO: tesztelésre, végén törölni */
-        foreach ($hiba as $h) {
-            echo $h; 
-            echo "<br>";
-        }
     }
 }
 ?>
+
+
+<!DOCTYPE hmtl>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Egyszerű PHP webszámológép</title>
+    <style>
+        /* TODO hozzáadni vagy törölni */
+    </style>
+</head>
+
+<body>
+
+    <?php if (!empty($hiba)): ?>
+        <h1>PHP webszámológép: <span style="color: red;">hiba!</span></h1>
+        <?php foreach ($hiba as $h): ?>
+           <p><?= htmlspecialchars($h) ?></p> 
+        <?php endforeach; ?>
+        <br>
+    <?php else: ?>
+        <h1>PHP webszámológép: <span style="color: green;">eredmény</span></h1>
+        <h2><?= htmlspecialchars($o1) ?>
+        <?= htmlspecialchars($muvelet) ?>
+        <?= htmlspecialchars($o2) ?>
+        <?= " = " ?>
+        <?= htmlspecialchars($eredmeny) ?></h2>
+        <br>
+    <?php endif; ?>
+
+    <form action="index.php" method="get" style="display:inline;">
+        <button type="submit">Vissza a beviteli felületre</button>
+    </form>
+
+</body>
+</html>
