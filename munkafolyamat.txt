@@ -41,9 +41,24 @@ Munkafolyamat
     egyetlen .php file vs. külön állományban a form és a logika?
     terv: 2 külön állomány a világosabb szerkezet és inkrementális fejlesztés érdekében:
     - index.php: html form-ot tartalmazza, az app belépési pontja.
-    - calculate.php: logika.
+    - calculate.php: logika és eredmény oldal generálás.
 
-3.) index.php implementálása
+3.) index.php (input form) implementálása
+
+    form létrehozása.
+    tesztelés böngészőben (http://localhost:8000)
+    https://github.com/miklosgyori/PHPCalculator/commit/94de3ba43d3d360f389e49a148910bba3e5b13ce
+    https://github.com/miklosgyori/PHPCalculator/commit/16a60fba5640d20f445cb5a9fcff54184cdad8c1
+
+4.) calculate.php (logika és eredmény oldal generálás) létrehozása
+
+4.1.) első változat a számolási logika ellenőrzésére
+
+    https://github.com/miklosgyori/PHPCalculator/commit/c58872cdb9889c189332b9e7a729292fd4b03e10
+    tesztelés böngészőben
+
+    javított:
+    
 
 
 

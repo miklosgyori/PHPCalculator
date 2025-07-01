@@ -2,7 +2,7 @@
 $szam1 = '';
 $szam2 = '';
 $muvelet = '';
-$hiba[] = '';
+$hiba = [];
 $eredmeny = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -15,7 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if(empty($hiba)){
         $o1 = floatval($szam1);
+        echo $o1; /* TODO: tesztelésre, végén törölni */
+        echo "<br>";
         $o2 = floatval($szam2);
+        echo $o2; /* TODO: tesztelésre, végén törölni */
+        echo "<br>";
         switch($muvelet){
             case '+':
                 $eredmeny = $o1 + $o2;
@@ -31,8 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 break;
         }
 
-        /* TODO: tesztelésre, végén törölni: */
-        echo $eredmeny;
+        echo $eredmeny; /* TODO: tesztelésre, végén törölni */
 
     }
 
