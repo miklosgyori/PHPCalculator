@@ -13,6 +13,8 @@
 
     <h1>PHP webszámológép</h1>
 
+    <p><i> Tizedes törtek ponttal jelölendőek! (Pld. 1.1)</p></i>
+
     <form action="calculate.php" method="post">
         <label>
             1. szám:

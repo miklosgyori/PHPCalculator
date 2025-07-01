@@ -54,12 +54,26 @@ Munkafolyamat
 
 4.1.) első változat a számolási logika ellenőrzésére
 
+    első változat, tesztelés böngészőben:
     https://github.com/miklosgyori/PHPCalculator/commit/c58872cdb9889c189332b9e7a729292fd4b03e10
-    tesztelés böngészőben
-
-    javított:
     
 
+    javított, tesztelhető:
+    https://github.com/miklosgyori/PHPCalculator/commit/4fa7f225c79a54f459d730e4128cf6259f01ccca
 
+    tesztelés böngészőben, tesztesetek (***: ellenőrzés, hibakezelés implementácoót igényelnek):
+        1 + 2;  1.1 + 2.1;  0 + 1;  1 + 0;  -1.1 + 2.1; 1.1 + -2.1; 1 + 999999999;  999999999 + 1;  a + b***;
+        1 - 2;  1.1 - 2.1;  0 - 1;  1 - 0;  -1.1 - 2.1; 1.1 - -2.1; 1 - 999999999;  999999999 - 1;  a - b***;
+        1 * 2;  1.1 * 2.1;  0 * 1;  1 * 0;  -1.1 * 2.1; 1.1 * -2.1; 999999999 * 999999999;  a * b ***;
+        1 / 2;  1.1 / 2.1;  0 / 1;  1 / 0***;   -1.1 / 2.1; 1.1 / -2.1; 1 / 999999999;  a / b***;
+        nem megadott operandus vagy művelet esetét maga a form kezeli.
 
+4.2.) inputellenőrzési és hibakezelési logika implementálása
+
+    tesztesetek (mindegyik sikeresen kezelve):
+        a + b;  a - b; a * b;  1 / 0; a / b;
+
+    
+
+    
 
