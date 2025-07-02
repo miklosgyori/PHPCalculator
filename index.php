@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Egyszerű PHP webszámológép</title>
-    <style>
-        /* TODO hozzáadni vagy törölni */
-    </style>
 </head>
 
 <body>

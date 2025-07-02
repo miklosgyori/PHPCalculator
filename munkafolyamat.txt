@@ -4,6 +4,7 @@ Felhasznált források:
 - PHP Manual: https://www.php.net/manual/en/
 - PHP The Right Way: Reference for Best PHP Practices: https://phptherightway.com/
 - How to Install PHP on Windows: https://www.geeksforgeeks.org/php/how-to-install-php-in-windows-10/
+- ChatGPT - csak hibakeresésre, kódot NEM másoltam.
 
 Git repo: https://github.com/miklosgyori/PHPCalculator
 
@@ -84,5 +85,8 @@ Munkafolyamat
     tesztesetek (mindegyik sikeresen megjelenítve):
         a + 1;  1 + a;  a + a;  1 / 0;  a / 0; a / a; 1 + 1;
 
-5.) "cleanup" és dokumentáció
+5.) "takarítás" és dokumentáció
 
+5.1.) forrásfile-ok clean-up
+5.2.) README.md véglegesítése
+5.3.) munkafolyamat.txt véglegesítése
