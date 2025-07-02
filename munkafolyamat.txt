@@ -90,3 +90,5 @@ Munkafolyamat
 5.1.) forrásfile-ok clean-up
 5.2.) README.md véglegesítése
 5.3.) munkafolyamat.txt véglegesítése
+
+https://github.com/miklosgyori/PHPCalculator/commit/437bdb2c2602b819dbd2d6cdbeb065aa17a6b98a
